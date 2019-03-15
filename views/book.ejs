@@ -1,0 +1,43 @@
+<% include partials/header.ejs %>
+
+<body>
+
+  <nav>
+    <ul>
+    <li><a href="/"><img src="https://vignette.wikia.nocookie.net/2007scape/images/f/fd/Frog_prince_chathead.png/revision/latest?cb=20190126215015" alt="oba logo static"></a></li>
+      <li><form class="" action="" method="post">
+        <label class="hidden" for="fun_txt">s</label>
+        <input id="fun_txt" class="fun_txt" type="text" name="" value="" placeholder="Zoeken...">
+      </form></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <div class="main_wrapper">
+
+
+  <div class="tricolor">
+
+  <main class="" id="root">
+
+
+
+<% if (final) { final.forEach(function(book) { %>
+<article class="">
+<img src="<%=book.cover_image%>" alt="">
+<h1><%= book.title %></h1>
+<p><%= book.title %></p>
+<p><%= book.description %></p>
+</article>
+    <% })} %>
+
+
+
+  </main>
+
+  </div>
+
+  </div>
+
+<% include partials/footer.ejs %>
+</body>
