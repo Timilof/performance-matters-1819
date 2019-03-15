@@ -2,6 +2,10 @@ body {
   background-color: #fff;
 }
 
+nav label{
+  opacity: 0;
+  margin-right: -5em;
+}
 nav{
   margin-top: 3em;
 }
@@ -14,6 +18,10 @@ nav img {
 nav ul {
   list-style: none;
   text-align: center;
+}
+
+nav img{
+width: 80px;
 }
 
 nav input {

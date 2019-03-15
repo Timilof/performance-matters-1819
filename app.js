@@ -10,6 +10,7 @@ app.set('view engine', 'ejs')
 app.set('views', 'views')
 
 app.use(express.static('src/css'))
+app.use(express.static('src/img'))
 // app.get('/:id', detail);
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
