@@ -18,11 +18,11 @@
       <button type="button" name="button">Leeg me</button>
       <h1><span>J</span><span>o</span><span>u</span><span>w</span> <span>k</span><span>e</span><span>u</span><span>z</span><span>e</span><span>s</span></h1>
       <div class="">
-
+<% if (cBooks) { cBooks.forEach(function(book) { %>
 <article class="">
-
+<img src="<%=book.cover_image%>" alt="<%= book.title %>">
 </article>
-
+<% })} %>
       </div>
     </aside>
 
@@ -35,7 +35,7 @@
 
 <% if (final) { final.forEach(function(book) { %>
 <article class="">
-<img src="<%=book.cover_image%>" alt="">
+<img src="<%=book.cover_image%>" alt="<%= book.title %>">
 
 <div class="">
 <p><%= book.title %></p>

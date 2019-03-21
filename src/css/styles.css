@@ -41,15 +41,15 @@ nav li {
   display: inline-block;
 }
 h3{
-font-family: Avenir-Black;
+font-family: Avenir-Black, sans-serif;
 }
 h2{
-font-family: Avenir-Black;
+font-family: Avenir-Black, sans-serif;
 color: #ffffffeb;
 }
 div a,
 div p{
-font-family: Avenir;
+font-family: Avenir, sans-serif;
 }
 
 main form{
@@ -244,7 +244,7 @@ aside h1{
 
 h1 {
   font-size: 30px;
-  font-family: Avenir-Roman;
+  font-family: Avenir-Roman, sans-serif;
   text-align: center;
   color: #4a4a4a;
   margin-bottom: 0em;
