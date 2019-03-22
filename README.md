@@ -1,54 +1,41 @@
-# Performance Matters @cmda-minor-web · 2018-2019
+## Performance Matters Oba 
 
-In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.
+In the first week I turned my OBA site into a server side rendering app, it was previously only client-side renderen and would cease to function if javascript was off. To achieve this I used NodeJS.
+The data i use to render my page is fetched from a json file made by [mennau]([https://github.com/Mennauu).
 
-## Leerdoelen
-- _Je weet het verschil tussen client side en server side rendering en kan server side rendering toepassen_
-- _Je begrijpt hoe de critical render path werkt, en hoe je deze kan optimaliseren voor een betere runtime en/of perceived performance._
-- _Je begrijpt hoe een Service Worker werkt en kan deze in jou applicatie implementeren._
 
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTO-pc2UMvpT0pUjt6NJeckc5N9E7QvCxEfVJW1JjuM0m_9MM8ra05J0s6br486Rocz5JVMhAX_C37_/pubhtml?gid=0&single=true)
 
-## Lesprogramma
+### Before performance enhancements on slow 3G
+When I tested my OBA site on slow 3G the app took 31 seconds till it was fully rendered.  
+[img](/src/img/zero_lijn.png)
 
-### Week 1 - Server Side rendering
+file sizes with no compression
+[no compression](/src/img/zero.png)
 
-Doel: Webpagina's server side renderen
+First paint on client side rendering is after 5.1 seconds
 
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md)
+### After minification on slow 3G
+It takes the app 9.2 seconds till it's fully rendered  
+[img](/src/img/mini_lijn.png)
 
-[Slides](...)
+file sizes with css compression
+[yes compression](/src/img/minified.png)
 
-### Week 2 - Critical Rendering Path  
+first paint in the minified css server side version is after 2.13 seconds.
 
-Doel: Critical Rendering path optimaliseren
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-2.md)
+### After caching on slow 3G
+It takes the app 8.5 seconds till it's fully rendered   
+[img](/src/img/cache_lijn.png)
 
-[Slides](...)
+file sizes with caching
+[cached css](/src/img/cached.png)
 
-### Week 3 - Going Offline 
+first paint in the server side version with cahce and minified css stays the same at 2.13 seconds.
 
-Doel: Webpagina's offline beschikbaar stellen
-
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-3.md)
-
-[Slides](...)
+#### Feature wishlist
+  make the first paint happen sooner
+  ttfb should be shorter/sooner
+  Find a way to make images render quicker/ or placeholder images/ lazy loading?
 
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- Add a nice image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
