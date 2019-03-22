@@ -1,4 +1,4 @@
-# Performance Matters @cmda-minor-web · 2018-2019
+## Performance Matters Oba 
 
 In the first week I turned my OBA site into a server side rendering app, it was previously only client-side renderen and would cease to function if javascript was off. To achieve this I used NodeJS.
 The data i use to render my page is fetched from a json file made by [mennau]([https://github.com/Mennauu).
