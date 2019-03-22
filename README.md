@@ -8,9 +8,9 @@ The data i use to render my page is fetched from a json file made by [mennau]([h
 ### Before performance enhancements on slow 3G
 When I tested my OBA site on slow 3G the app took 31 seconds till it was fully rendered.  
 [img](src/img/zero_lijn.png)
-
+[img](src/img/zero_lijn.png)
 file sizes with no compression
-[no compression](/src/img/zero.png)
+[no compression](https://obajunior.nl/static/img/logo.66b1d35.png)
 
 First paint on client side rendering is after 5.1 seconds
 
