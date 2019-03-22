@@ -8,26 +8,26 @@ The data i use to render my page is fetched from a json file made by [mennau]([h
 ### Before performance enhancements on slow 3G
 When I tested my OBA site on slow 3G the app took 31 seconds till it was fully rendered.  
 ![img](src/img/zero_lijn.png)
-file sizes with no compression
+file sizes with no compression  
 ![no compression](/src/img/zero.png)
 
 First paint on client side rendering is after 5.1 seconds
 
 ### After minification on slow 3G
 It takes the app 9.2 seconds till it's fully rendered  
-[img](/src/img/mini_lijn.png)
+![img](/src/img/mini_lijn.png)
 
-file sizes with css compression
-[yes compression](/src/img/minified.png)
+file sizes with css compression  
+![yes compression](/src/img/minified.png)
 
 first paint in the minified css server side version is after 2.13 seconds.
 
 ### After caching on slow 3G
-It takes the app 8.5 seconds till it's fully rendered   
-[img](/src/img/cache_lijn.png)
+It takes the app 8.5 seconds till it's fully rendered    
+![img](/src/img/cache_lijn.png)
 
-file sizes with caching
-[cached css](/src/img/cached.png)
+file sizes with caching  
+![cached css](/src/img/cached.png)
 
 first paint in the server side version with cahce and minified css stays the same at 2.13 seconds.
 
