@@ -18,6 +18,7 @@ res.setHeader('Cache-Control', 'max-age=' + 365 * 24 * 60 *
 
 app.use(express.static('src/css'))
 app.use(express.static('src/img'))
+app.use(express.static('src/js'))
 // app.get('/:id', detail);
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());

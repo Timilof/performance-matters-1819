@@ -1,20 +1,17 @@
 <% include partials/header.ejs %>
-
-<body>
-
   <nav>
     <ul>
       <li><img src="./logo.svg" alt="oba logo static"></li>
-      <li><form class="" action="" method="post">
-        <label class="" for="fun_txt">Zoeken</label>
-      </form></li>
+      <!-- <li><form class="" action="" method="post"> -->
+        <!-- <label class="" for="fun_txt">Zoeken</label> -->
+      <!-- </form></li> -->
       <li></li>
     </ul>
   </nav>
 
   <div class="main_wrapper">
     <aside class="">
-      <button type="button" name="button">Leeg me</button>
+      <!-- <button type="button" name="button">Leeg me</button> -->
       <h1><span>J</span><span>o</span><span>u</span><span>w</span> <span>k</span><span>e</span><span>u</span><span>z</span><span>e</span><span>s</span></h1>
       <div class="">
       </div>
@@ -26,7 +23,7 @@
   <main class="" id="root">
 
 
-<form class="" action="/detail" method="post">
+<form class="" action="/detail" method="get">
 <% if (final) { final.forEach(function(book) { %>
 <article class="">
   <label for="<%= book.title %>"><img src="<%=book.cover_image%>" alt=""></label>
@@ -43,4 +40,3 @@
   </div>
 
 <% include partials/footer.ejs %>
-</body>

@@ -1,13 +1,10 @@
 <% include partials/header.ejs %>
-
-<body>
-
   <nav>
     <ul>
     <li><a href="/"><img src="./logo.svg" alt="oba logo static"></a></li>
       <li><form class="" action="" method="post">
-        <label class="" for="fun_txt">s</label>
-        <input id="fun_txt" class="fun_txt" type="text" name="" value="" placeholder="Zoeken...">
+        <!-- <label class="" for="fun_txt">s</label> -->
+        <!-- <input id="fun_txt" class="fun_txt" type="text" name="" value="" placeholder="Zoeken..."> -->
       </form></li>
       <li></li>
     </ul>
@@ -15,12 +12,12 @@
 
   <div class="main_wrapper">
     <aside class="">
-      <button type="button" name="button">Leeg me</button>
+      <!-- <button type="button" name="button">Leeg me</button> -->
       <h1><span>J</span><span>o</span><span>u</span><span>w</span> <span>k</span><span>e</span><span>u</span><span>z</span><span>e</span><span>s</span></h1>
       <div class="">
 <% if (cBooks) { cBooks.forEach(function(book) { %>
 <article class="">
-<img src="<%=book.cover_image%>" alt="<%= book.title %>">
+<img class="lazy" data-src="<%=book.cover_image%>" alt="<%= book.title %>">
 </article>
 <% })} %>
       </div>
@@ -35,11 +32,12 @@
 
 <% if (final) { final.forEach(function(book) { %>
 <article class="">
-<img src="<%=book.cover_image%>" alt="<%= book.title %>">
+<img class="lazy" data-src="<%=book.cover_image%>" alt="<%= book.title %>">
 
 <div class="">
 <p><%= book.title %></p>
 <p><%= book.description %></p>
+<a target="_blank" href="<%= book.link %>">bekijk boek</a>
 </div>
 
 </article>
@@ -54,4 +52,3 @@
   </div>
 
 <% include partials/footer.ejs %>
-</body>

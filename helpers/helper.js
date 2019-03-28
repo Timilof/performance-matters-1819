@@ -23,7 +23,7 @@ exports.dataFetch = function(req, res) {
 
 }
 
-exports.clickedBooks = function(body, ) {
+exports.clickedBooks = function(query) {
 return new Promise((resolve, reject) => {
   const resh = [];
   fs.readFile('src/results.json', function(error, data) {
@@ -35,7 +35,7 @@ return new Promise((resolve, reject) => {
       return imgBooks.cover_image !== null;
     })
 
-         Object.keys(body).forEach(book=>{
+         Object.keys(query).forEach(book=>{
              // console.log(book)
              filteredData.forEach(item=>{
                if (book === item.title){

@@ -1,12 +1,11 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const baseDir = 'src/optimised/';
+const baseDir = 'src/js/';
+
 gulp.src([
-baseDir + '/dist/js/bootstrap.js',
-baseDir + '/assets/js/docs.min.js',
-baseDir + '/assets/js/ie10-viewport-bug-workaround.js'
+baseDir + 'index.js'
 ])
- .pipe(concat('index.js'))
+ .pipe(concat('index.min.js'))
  .pipe(uglify())
- .pipe(gulp.dest('dist/optimised/'));
+ .pipe(gulp.dest('src/js/'));
