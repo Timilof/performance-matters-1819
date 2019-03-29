@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "build:css": "node gulp/styles.js",
-    "build:js": "node gulp/scripts.js",
-    "revision": "node gulp/revision.js",
-    "revised": "node gulp/revision-hash.js"
+    "start": "node server"
   },
   "author": "",
   "license": "ISC",
