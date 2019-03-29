@@ -36,7 +36,7 @@ first paint in the server side version with cahce and minified css stays the sam
 i wrote a simple function that lazyloads all images (load images when they enter the viewport) making the site extremely fast to load.  
 On top of this I tried to minify the script with gulp to make it even lighter to load. But that didn't work, the javascript file appeared to be so small that once compressed it took the browser longer to unpack and serve it than it did without any minification.  
 ![lazy load](/src/img/lazy2.png)  
-Images are only loaded once they enter the viewport, the lazy loader saves a lot of runtime because it only loads images that are required.
+Images are only loaded once they enter the viewport, the lazy loader shortens the time it takes to load the page because it only loads images that are required in the viewport.
 
 ### Service worker
 The final performance updgrade i implemented was a service worker. This service worker makes it possible to cache certain pages and elements from the page that you can re-use. It makes it possible to pre-load certain designated pages and assets (such as the css, javascript and the offline and home pages) even when you have no data connection. It also caches any requests the client makes, so any pages the client views will be saved in cache storage. The first way is precaching and the second is called runtime caching.  
